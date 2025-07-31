@@ -11,5 +11,5 @@ jobs:
     - name: Discord Webhook Action
       uses: tsickert/discord-webhook@v5.3.0
       with:
-        webhook-url: https://discord.com/api/webhooks/1400389370296664145/FWfLTiTDiLMVqoXhMidxH3hj1vCxO0hfoJ_Yns-tzjeSrttE-YC0agxSulsVcNMnL1E3
+        webhook-url: ${{ secrets.DISCORD_WEBHOOK }}
         content: "내일 대방어 정기회의있습니다\n일시 : 8시~11시\n\n참여 여부 이모지로 회의 시작 전까지 남겨주세요"
