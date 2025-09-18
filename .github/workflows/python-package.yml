@@ -2,7 +2,7 @@ name: 디스코드 회의 알림봇
 
 on:
   schedule: # UTC+9 기준 월요일,수요일 3시 실행
-    - cron: "0 6 * * 2,4"
+    - cron: "0 7 * * 2,4"
   workflow_dispatch:
 
 jobs:
@@ -13,4 +13,4 @@ jobs:
       uses: tsickert/discord-webhook@v5.3.0
       with:
         webhook-url: ${{ secrets.DISCORD_WEBHOOK }}
-        content: "내일 대방어 정기회의있습니다\n일시 : 8시~11시\n\n참여 여부 이모지로 회의 시작 전까지 남겨주세요"
+        content: "오늘 대방어 정기회의있습니다\n일시 : 8시~11시\n\n참여 여부 이모지로 회의 시작 전까지 남겨주세요"
