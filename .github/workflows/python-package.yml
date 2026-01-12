@@ -2,7 +2,7 @@ name: 디스코드 회의 알림봇
 
 on:
   schedule: # UTC+9 기준 월요일 1시 실행
-    - cron: "0 4 * * 2"
+    - cron: "0 4 * * 1"
   workflow_dispatch:
 
 jobs:
